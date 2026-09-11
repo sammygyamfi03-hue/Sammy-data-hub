@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sammy's Data Hub</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f4f7f6; margin: 0; padding: 20px; text-align: center; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 20px; text-align: center; }
         .header { font-size: 24px; font-weight: bold; color: #333; margin-bottom: 5px; }
         .sub-header { font-size: 14px; color: #666; margin-bottom: 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; max-width: 600px; margin: 0 auto; }
-        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .size { font-size: 18px; font-weight: bold; color: #00b386; margin-bottom: 10px; }
-        .buy-btn { background: #00b386; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 14px; width: 100%; text-decoration: none; display: inline-block; font-weight: bold; }
-        .buy-btn:hover { background: #009970; }
+        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+        .size { font-size: 18px; font-weight: bold; color: #333; margin-bottom: 5px; }
+        .price { font-size: 14px; color: #2e7d32; font-weight: bold; margin-bottom: 10px; }
+        .buy-btn { background: #28a745; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; font-size: 14px; font-weight: bold; width: 100%; box-sizing: border-box; display: inline-block; }
+        .buy-btn:hover { background: #218838; }
     </style>
 </head>
 <body>
@@ -21,19 +22,77 @@
     <div class="sub-header">Select your network and bundle size</div>
 
     <div class="grid">
-        <div class="card"><div class="size">1GB</div><a href="https://paystack.shop/pay/bpj11549fg"><button class="buy-btn">Buy 1GB</button></a></div>
-        <div class="card"><div class="size">2GB</div><a href="https://paystack.shop/pay/03wg8tv8in"><button class="buy-btn">Buy 2GB</button></a></div>
-        <div class="card"><div class="size">3GB</div><a href="https://paystack.shop/pay/90s3r82oh7"><button class="buy-btn">Buy 3GB</button></a></div>
-        <div class="card"><div class="size">4GB</div><a href="https://paystack.shop/pay/18aysl7gop"><button class="buy-btn">Buy 4GB</button></a></div>
-        <div class="card"><div class="size">5GB</div><a href="https://paystack.shop/pay/6q6ha3cpua"><button class="buy-btn">Buy 5GB</button></a></div>
-        <div class="card"><div class="size">6GB</div><a href="https://paystack.shop/pay/hf6eceq7ex"><button class="buy-btn">Buy 6GB</button></a></div>
-        <div class="card"><div class="size">8GB</div><a href="https://paystack.shop/pay/84nthimho0"><button class="buy-btn">Buy 8GB</button></a></div>
-        <div class="card"><div class="size">10GB</div><a href="https://paystack.shop/pay/vw5p3b-p8v"><button class="buy-btn">Buy 10GB</button></a></div>
+        <div class="card">
+            <div>
+                <div class="size">1GB</div>
+                <div class="price">GHS 5.50</div>
+            </div>
+            <a href="https://paystack.shop/pay/rnmbph8kz6" class="buy-btn">Buy 1GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">2GB</div>
+                <div class="price">GHS 11.00</div>
+            </div>
+            <a href="https://paystack.shop/pay/1m2q3jflfe" class="buy-btn">Buy 2GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">3GB</div>
+                <div class="price">GHS 16.50</div>
+            </div>
+            <a href="https://paystack.shop/pay/vw5p3b-p8v" class="buy-btn">Buy 3GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">4GB</div>
+                <div class="price">GHS 22.00</div>
+            </div>
+            <a href="https://paystack.shop/pay/84nthimho0" class="buy-btn">Buy 4GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">5GB</div>
+                <div class="price">GHS 27.50</div>
+            </div>
+            <a href="https://paystack.shop/pay/hf6eceq7ex" class="buy-btn">Buy 5GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">6GB</div>
+                <div class="price">GHS 33.00</div>
+            </div>
+            <a href="https://paystack.shop/pay/6q6ha3cpua" class="buy-btn">Buy 6GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">7GB</div>
+                <div class="price">GHS 38.50</div>
+            </div>
+            <a href="https://paystack.shop/pay/18aysl7gop" class="buy-btn">Buy 7GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">8GB</div>
+                <div class="price">GHS 44.00</div>
+            </div>
+            <a href="https://paystack.shop/pay/90s3r82oh7" class="buy-btn">Buy 8GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">9GB</div>
+                <div class="price">GHS 49.50</div>
+            </div>
+            <a href="https://paystack.shop/pay/03wg8tv8in" class="buy-btn">Buy 9GB</a>
+        </div>
+        <div class="card">
+            <div>
+                <div class="size">10GB</div>
+                <div class="price">GHS 55.00</div>
+            </div>
+            <a href="https://paystack.shop/pay/bpj11549fg" class="buy-btn">Buy 10GB</a>
+        </div>
     </div>
 
-    <!-- Live Paystack Integration Key Configured -->
-    <script>
-        const PAYSTACK_PUBLIC_KEY = "pk_live_025c89336162a854cf7846e82f9d1490e1387a05";
-    </script>
 </body>
 </html>
